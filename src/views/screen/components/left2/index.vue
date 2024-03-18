@@ -29,11 +29,18 @@
         </div>
         <div class="box2-bottom-bottom">
           <div class="buttom-image">
-            <img
-              src="http://localhost:8081/aiPlatform/file/download/a.jpg"
-              alt="123"
-              style="width: 150px; height: 100px"
-            />
+            <video
+              controls
+              ref="videoPlayer"
+              style="width: 100%"
+              @play="onPlay"
+              @pause="onPause"
+            >
+              <source
+                src="http://localhost:8081/aiPlatform/file/download/aa.mp4"
+                type="video/mp4"
+              />
+            </video>
           </div>
           <div class="buttom-image">
             <img
@@ -43,11 +50,11 @@
             />
           </div>
           <div class="buttom-image">
-            <img
-              src="http://localhost:8081/aiPlatform/file/download/a.jpg"
+            <video
+              src="http://localhost:8081/aiPlatform/file/download/aa.mp4"
               alt="123"
               style="width: 150px; height: 100px"
-            />
+            ></video>
           </div>
         </div>
       </div>
